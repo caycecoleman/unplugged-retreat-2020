@@ -129,11 +129,11 @@ p {
 }
  
 img {
- 
+ width: 100%;
 }
  
 figure {
- 
+ margin: 0;
 }
  
 address {
@@ -166,6 +166,14 @@ header .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   margin: 0;
+}
+
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 .header-divider {
@@ -229,51 +237,22 @@ footer .social-icons p {
 footer .copyright {
   margin: 20px 0;
 }
-
-   /* Header styles */
-
-   header {
-    padding: 15px 0;
-  }
-  
-  header .content-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    margin: 0;
-  }
-   
-   .header-divider {
-    width: 100%;
-    height: 1px;
-    margin: 10px 0 20px 0;
-  }
-  
-  header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-flow: row wrap;
-    width: 60%;
-  }
-  
-  header nav ul {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
+    
    /* -------- Mobile Styles - Homepage ------- */
 
    .hero-area {
     display:flex;
     justify-content:center;
     flex-flow:row wrap;
+    background: url('../img/hero-image.jpg') #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
    }
 
   .hero-area h1 {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
-    font-size: 2.88em;
+    font-size: 2.25em;
     font-weight: 500;
     line-height: 1.2;
   }
@@ -317,6 +296,10 @@ footer .copyright {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+    background: url('../img/features.jpg') #333;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
   
   .features h2 {
@@ -359,6 +342,9 @@ footer .copyright {
     margin: 20px 0;
   }
   
+  .reviews figure {
+    width: 90%;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -466,8 +452,12 @@ header .content-wrapper {
   width:100%;
 }
 
+header figure {
+  width: 30%;
+}
+
 header nav {
-  width:19%;
+  width: 19%;
 }
 
 header nav ul {
@@ -479,6 +469,15 @@ header nav ul {
 }
 
 /* Hero Area */
+.hero-area {
+  min-height: 600px;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin: 0;
+}
 
 /* Aside */
 aside .content-wrapper {
@@ -504,7 +503,7 @@ aside .content-wrapper .form {
 }
 
 .features .features-item-description {
-  width: 50%;
+  width: 62%;
 }
 
 /* Reviews */
@@ -514,8 +513,21 @@ aside .content-wrapper .form {
   justify-content:space-between;
 }
 
+.reviews h2 {
+  width:83%;
+}
+
 .reviews article div {
   width: 50%;
+}
+
+.reviews h3 {
+  width:75%;
+  margin: 0;
+}
+
+.reviews figure {
+  width: 40%;
 }
 
 /* Footer */
