@@ -170,29 +170,36 @@ footer .copyright {
    /* Header styles */
 
    header {
-
-   }
-
-   header .content-wrapper {
-
-   }
-
-   header figure {
-
-   }
+    padding: 15px 0;
+  }
+  
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+  }
    
    .header-divider {
-    width: 45%;
-   }
-
-   header nav {
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
     width: 60%;
-   }
-
-   header nav ul {
-     width: 
-     margin:
-   }
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
    /* -------- Mobile Styles - Homepage ------- */
 
    .hero-area {
@@ -237,7 +244,7 @@ footer .copyright {
 
    /* ------- Mobile Styles - Reviews ------*/
 
-   .reviews {
+   .reviews article {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -340,8 +347,139 @@ footer .copyright {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+  /* General styles here */
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+
+/* Header */
+header {
+  justify-content: space-around;
+  padding: 33px 0;
+}
+
+header .content-wrapper {
+  justify-content: space-between;
+  width:100%;
+}
+
+header nav {
+  width:19%;
+}
+
+header nav ul {
+  justify-content: space-between;
+}
+
+.header-divider {
+  display: none;
+}
+
+/* Hero Area */
+
+/* Aside */
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content:space-between;
+  flex-flow: row wrap;
+}
+
+aside .content-wrapper .form-description, 
+aside .content-wrapper .form {
+  width: 50%;
+  margin: 0;
+}
+
+/* Features */
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-flow:column wrap;
+  flex-basis: 50%;
+}
+
+.features .features-item-description {
+  width: 50%;
+}
+
+/* Reviews */
+.reviews article {
+  width: 50%;
+  display: flex;
+  justify-content:space-between;
+}
+
+.reviews article div {
+  width: 50%;
+}
+
+/* Footer */
+.footer-content {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.footer-content-wrapper {
+  width: 65%;
+  margin: 100px 0;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+.social {
+  width: 50%;
+}
+
+footer .copyright {
+  width: 100%;
+}
+
+/* ----- About Page ----- */
+.mission-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top:20px;
+}
+
+.mission-content p {
+  width: 50%;
+}
+
+.contact-section .content-wrapper h2 {
+  width: 80%;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: space-between;
+  align-items:flex-start;
+}
+
+/* ----- FAQ Pages -----*/
+.faq .content-wrapper {
+  justify-content: space-between;
+}
+
+.faq-content {
+  flex-basis: 40%;
+}
+
+.faq h2 {
+  width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+
+  /*Desktop styles here*/
+
 }
 
 @media print,
@@ -424,5 +562,3 @@ footer .copyright {
   h3 {
     page-break-after: avoid;
   }
-}
-
