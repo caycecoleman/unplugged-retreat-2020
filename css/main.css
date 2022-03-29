@@ -323,6 +323,11 @@ footer .copyright {
     margin: 0;
   }
 
+  .features i {
+    font-size: 3.75em;
+          margin-bottom: 40px;
+  }
+
    /* ------- Mobile Styles - Reviews ------*/
 
    .reviews {
@@ -340,10 +345,6 @@ footer .copyright {
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
-  }
-  
-  .reviews figure {
-    width: 90%;
   }
 
   /****************** ABOUT PAGE *********************/
