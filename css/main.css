@@ -576,6 +576,22 @@ footer .copyright {
   align-items:flex-start;
 }
 
+.map figure{
+  width: 100%;
+  height:0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom:125%;
+}
+
+.map iframe{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+}
+
 /* ----- FAQ Pages -----*/
 .faq .content-wrapper {
   justify-content: space-between;
